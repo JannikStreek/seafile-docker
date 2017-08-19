@@ -1,9 +1,6 @@
 #!/bin/bash
 . /usr/local/bin/seafile_env.sh
 
-log_info "testtesttest"
-log_info $LATEST_SERVER_DIR
-
 EXPOSED_DIRS="conf ccnet logs seafile-data seahub-data"
 EXPOSED_ROOT_DIR=${EXPOSED_ROOT_DIR:-"/seafile"}
 
@@ -167,6 +164,9 @@ check_require() {
 		exit 1
 	fi
 }
+
+log_info "testtesttest"
+log_info $LATEST_SERVER_DIR
 
 if [[ ! -e $LATEST_SERVER_DIR ]]; then
 	wait_for_db
