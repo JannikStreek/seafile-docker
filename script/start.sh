@@ -1,6 +1,5 @@
 #!/bin/bash
 . /usr/local/bin/seafile_env.sh
-./usr/local/bin/seafile_env.sh
 
 EXPOSED_DIRS="conf ccnet logs seafile-data seahub-data"
 EXPOSED_ROOT_DIR=${EXPOSED_ROOT_DIR:-"/seafile"}
