@@ -1,6 +1,8 @@
 #!/bin/bash
 . /usr/local/bin/seafile_env.sh
 
+log_info $LATEST_SERVER_DIR
+
 EXPOSED_DIRS="conf ccnet logs seafile-data seahub-data"
 EXPOSED_ROOT_DIR=${EXPOSED_ROOT_DIR:-"/seafile"}
 
